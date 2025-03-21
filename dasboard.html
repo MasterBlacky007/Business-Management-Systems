@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dasboard.css">
+    <script src="cusdash.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Dashboard</h2>
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dasboard.html"><i class="fas fa-home"></i><span> Dashboard</span></a></li>
+                <li><a href="cusprofile.php"><i class="fas fa-user"></i><span> Profile</span></a></li>
+                <li><a href="cuspv.php"><i class="fas fa-shopping-cart"></i><span> Products</span></a></li>
+                <li><a href="cusorder.html"><i class="fas fa-shopping-cart"></i><span> Orders</span></a></li>
+                <li><a href="cusfeedback.php"><i class="fa-solid fa-comment-dots"></i><span> Feedback</span></a></li>
+                <li><a href="cuslogin.html"><i class="fas fa-sign-out-alt"></i><span> Logout</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome to Dashboard</h1>
+            </header>
+            <section class="content">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                      <img src="images/home.jpg" alt="Product 1">
+                      <div class="product-details">
+                        <h3>Company Overview</h3>
+                        <p>Master Poly is a leading manufacturer of high-quality polymer-based products, specializing in durable and eco-friendly plastic solutions for various industries. With a commitment to innovation and sustainability, the company delivers reliable products tailored to modern needs.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="slide fade">
+                      <img src="images/s2.jpg" alt="Product 2">
+                      <div class="product-details">
+                        <h3>Product Range</h3>
+                        <p>Master Poly offers a diverse range of polymer products, including industrial packaging, household plastics, and custom-molded components. Their advanced manufacturing processes ensure strength, flexibility, and longevity in every product.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="slide fade">
+                      <img src="images/s3.jpg" alt="Product 3">
+                      <div class="product-details">
+                        <h3> Sustainability Initiatives</h3>
+                        <p>Master Poly prioritizes environmental responsibility by implementing eco-friendly production techniques, recycling programs, and biodegradable material innovations. The company continuously strives to reduce its carbon footprint while maintaining high industry standards</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Add more slides here if needed -->
+                  </div>
+                  
+            </section>
+        </div>
+
+    </div>
+</body>
+<footer>
+  <div class="footer-container">
+      
+      <div class="copyright">
+          <p><center><b>&copy; 2025 Master Poly (Pvt) Ltd. All rights reserved.</b></center></p>
+      </div>
+  </div>
+</footer>
+</html>

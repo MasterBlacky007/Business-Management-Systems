@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F6E9E7; /* Pot Pourri */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1b2663; /* Biscay */
+    color: white;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E52028; /* Alizarin Crimson */
+    font-size: 18px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 12px 20px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu li:hover {
+    background-color: #bb90a9; /* Sea Pink */
+    border-radius: 5px;
+}
+
+/* Collapsible Sidebar */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .sidebar-header h2 {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu li a span {
+    display: none;
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1300px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Profile container styles */
+.profile-container {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile title styles */
+.profile-container h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Profile item styles */
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.profile-item label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.profile-item span {
+    color: #2c3e50;
+}
+
+/* Hover effect for profile items */
+.profile-item:hover {
+    background-color: #bb90a9; /* Sea Pink */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 25px;
+    }
+
+    .profile-container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .profile-container h2 {
+        font-size: 1.6em;
+    }
+
+    .profile-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-item label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    .profile-item span {
+        font-size: 1.2em;
+    }
+}

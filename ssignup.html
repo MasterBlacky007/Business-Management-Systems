@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Signup</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo">
+        </div>
+        <form action="ssignup.php" method="POST" class="login-form">
+            <h2>Create an Account</h2>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="text" name="firstname" placeholder="Enter your first name" required>
+            <input type="text" name="lastname" placeholder="Enter your last name" required>
+            <input type="text" name="address" placeholder="Enter your Address" required>
+            <input type="text" name="contact" placeholder="Enter your ContactNo" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+            <button type="submit" class="login-btn">Sign Up</button>
+            <!-- Additional Buttons -->
+            <p class="signup-text">
+                Already have an account? <a href="suplogin.html" class="signup-btn">Login Here</a>
+            </p>
+            <a href="Home.html" class="welcome-access">Go to Welcome Page</a>
+        </form>
+    </div>
+</body>
+</html>
