@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM Dashboard</title>
+    <link rel="stylesheet" href="mc.css">
+    <link rel="stylesheet" href="dasboard.css">
+    
+    <script src="cusdash.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Dashboard</h2>
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="fmdash.html"><i class="fas fa-home"></i><span> Dashboard</span></a></li>
+                <li><a href="fmprofile.php"><i class="fas fa-user"></i><span> Profile</span></a></li>
+                <li><a href="fmtasks.php"><i class="fas fa-tasks"></i><span> Tasks</span></a></li>
+                <li><a href="fmps.php"><i class="fas fa-calendar-alt"></i><span> Production Schedules</span></a></li> 
+                <li><a href="fmstask.html"><i class="fas fa-tasks"></i><span> Assign Tasks</span></a></li> 
+                <li><a href="viewfeedback.php"><i class="fas fa-comments"></i><span> Feedback Operations</span></a></li> 
+                <li><a href="fmreport.html"><i class="fas fa-chart-bar"></i><span> Reports</span></a></li>                 
+                <li><a href="Home.html"><i class="fas fa-sign-out-alt"></i><span> Logout</span></a></li>
+
+                
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome to Factory Manager Dashboard</h1>
+            </header>
+            <section class="dash-container">
+                <h2>Operations</h2>
+                <div class="operations">
+                    
+                    
+                    <div class="operation-box">
+                        <img src="images/task.png" alt="task Icon">
+                        <a href="fmtasks.php">Tasks</a>
+                    </div>
+                    <div class="operation-box">
+                        <img src="images/time.png" alt="driver Icon">
+                        <a href="fmps.php">Production Schedules</a>
+                    </div>
+                    <div class="operation-box">
+                        <img src="images/stask.png" alt="time Icon">
+                        <a href="fmstask.html">Assign Tasks</a>
+                    </div>
+
+                    <div class="operation-box">
+                        <img src="images/feedback.png" alt="time Icon">
+                        <a href="viewfeedback.php">Feedback Operations</a>
+                    </div>
+
+                    <div class="operation-box">
+                        <img src="images/report.webp" alt="report Icon">
+                        <a href="fmreport.html">Reports</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+</body>
+<footer>
+  <div class="footer-container">
+      
+      <div class="copyright">
+          <p><center><b>&copy; 2025 Master Poly (Pvt) Ltd. All rights reserved.</b></center></p>
+      </div>
+  </div>
+</footer>
+</html>

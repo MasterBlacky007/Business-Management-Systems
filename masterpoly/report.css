@@ -1,0 +1,122 @@
+body {
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9ebec; /* Fantasy */
+    color: #1b2663; /* Biscay */
+    line-height: 1.6;
+}
+
+.report {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.letterhead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #cf3134; /* Persian Red */
+    padding-bottom: 15px;
+}
+
+.letterhead .logo {
+    max-height: 90px;
+    margin-right: 20px;
+}
+
+.letterhead .details h2 {
+    margin: 0;
+    color: #cf3134; /* Persian Red */
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h1, h2 {
+    color: #1b2663; /* Biscay */
+}
+
+h1 {
+    color: #cf3134; /* Persian Red */
+}
+
+button.print-btn {
+    background: #1b2663; /* Biscay */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.print-btn:hover {
+    background: #bb90a9; /* Bouquet */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1b2663; /* Biscay */
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.metadata {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bb90a9; /* Bouquet */
+}
+
+@media print {
+    button.print-btn {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .report {
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .letterhead {
+        border-bottom: 1px solid #cf3134; /* Persian Red */
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+}
+
+.header-details {
+    display: flex;
+    justify-content: space-between;
+    width: 130%;
+    margin-top: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    font-size: 14px;
+    color: #1b2663; /* Biscay */
+}

@@ -1,0 +1,292 @@
+/* Reset Stylesheet */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main Layout */
+.wrapper {
+    width: 100%;
+}
+
+/* Header */
+header {
+    height: 15vh;
+    width: 100%;
+    background-color: #d32f2f;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px; /* Ensures it fits navbar */
+    width: auto;
+    display: block;
+}
+
+.logo {
+    margin-left: 120px; /* Add some space from the left side */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center; /* Align navigation items properly */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1B2663;
+}
+
+.buttons {
+    margin-left: 20px;
+}
+
+.btn {
+    background-color:#b71c1c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1B2663;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 40px 5%;
+    background-color: #f4f4f4;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info .info-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info .info-item i {
+    font-size: 40px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.contact-info .info-item h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-info .info-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Inquiry Form */
+.inquire-form {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inquire-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inquire-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inquire-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .inquire-form {
+        width: 80%;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+}
+footer
+{
+    height: 100%;
+    width: 100%;
+    background-color: #d32f2f;
+}
+
+.footer {
+    background-color:#d32f2f;
+    padding: 50px 0;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-box {
+    width: 23%;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-box ul {
+    list-style-type: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #ff6600;
+}
+
+.company-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}

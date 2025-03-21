@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Staff Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo">
+        </div>
+        <h2>LOGIN</h2>
+        
+        <form class="login-form" action="slogin.php" method="post">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <select name="userRole" required>
+                <option value="" disabled selected>Select User Role</option>
+                <option value="owner">Owner</option>
+                <option value="fmanager">Factory Manager</option>
+                <option value="pmanager">Production Manager</option>
+                <option value="imanager">Inventory Manager</option>
+                <option value="tmanager">Transport Manager</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="employee">Employee</option>
+                <option value="skeeper">Stock Keeper</option>
+                <option value="distributor">Distributor</option>
+                
+            </select>
+            <button type="submit" class="login-btn">Log In</button>
+            <a href="Home.html" class="welcome-access">Go to Welcome Page</a>
+        </form>
+    </div>
+    
+</body>
+</html>

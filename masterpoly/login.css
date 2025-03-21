@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6E9E7; /* Pot Pourri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Logo and Title */
+.logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #E52028; /* Alizarin Crimson */
+    margin: 0;
+}
+
+.subtitle {
+    color: #E98B94; /* Sea Pink */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.login-form input,
+.login-form select,
+.login-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+    outline: none;
+    border: 1px solid #E52028; 
+}
+
+.login-form button {
+    background-color: #1b2663; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #E52028; 
+}
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1b2663; 
+}
+
+/* Signup Button (as a link) */
+.signup-btn {
+    color: #E52028;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-btn:hover {
+    color: #1b2663; 
+    text-decoration: underline;
+}
+
+.welcome-access {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #E98B94;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-access:hover {
+    background-color: #E52028;
+}
+h2 {
+    font-size: 24px;
+    color: #E52028; 
+    margin-bottom: 15px;
+}

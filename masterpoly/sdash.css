@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F6E9E7; /* Pot Pourri */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1b2663; /* Biscay */
+    color: white;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E52028; /* Alizarin Crimson */
+    font-size: 18px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 12px 20px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu li:hover {
+    background-color: #bb90a9; /* Sea Pink */
+    border-radius: 5px;
+}
+
+/* Collapsible Sidebar */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .sidebar-header h2 {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu li a span {
+    display: none;
+}
+
+/* Main Content */
+
+.main-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1600px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Operation Boxes */
+.dash-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.operation-box {
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.operation-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.operation-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    line-height: 1.4;
+}

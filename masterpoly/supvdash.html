@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Dashboard</title>
+    <link rel="stylesheet" href="mc.css">
+    <link rel="stylesheet" href="dasboard.css">
+    
+    <script src="cusdash.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Dashboard</h2>
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="supvdash.html"><i class="fas fa-home"></i><span> Dashboard</span></a></li>
+                <li><a href="supprofile.php"><i class="fas fa-user"></i><span> Profile</span></a></li>
+                <li><a href="supertask.php"><i class="fas fa-tasks"></i><span> Tasks</span></a></li>
+                <li><a href="viewsupleaves.php"><i class="fas fa-tasks"></i><span> Shift Operations</span></a></li> 
+                <li><a href="supgenstock.php"><i class="fas fa-tasks"></i><span> Stock Requests</span></a></li>                 
+                <li><a href="spvreport.html"><i class="fas fa-chart-bar"></i><span> Reports</span></a></li>                 
+                <li><a href="slogin.html"><i class="fas fa-sign-out-alt"></i><span> Logout</span></a></li>
+
+                
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome to Supervisor Dashboard</h1>
+            </header>
+            <section class="dash-container">
+                <h2>Operations</h2>
+                <div class="operations">
+                    
+                    
+                    <div class="operation-box">
+                        <img src="images/task.png" alt="task Icon">
+                        <a href="supertask.php">Tasks</a>
+                    </div>
+                    
+                    <div class="operation-box">
+                        <img src="images/time.png" alt="time Icon">
+                        <a href="viewsupleaves.php">Shift Operations</a>
+                    </div>
+
+                    <div class="operation-box">
+                        <img src="images/warehouse.png" alt="stock Icon">
+                        <a href="supgenstock.php">Stock Requests</a>
+                    </div>
+
+                    <div class="operation-box">
+                        <img src="images/report.webp" alt="report Icon">
+                        <a href="spvreport.html">Reports</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+</body>
+<footer>
+  <div class="footer-container">
+      
+      <div class="copyright">
+          <p><center><b>&copy; 2025 Master Poly (Pvt) Ltd. All rights reserved.</b></center></p>
+      </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F6E9E7; /* Pot Pourri */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1b2663; /* Biscay */
+    color: white;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E52028; /* Alizarin Crimson */
+    font-size: 18px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 12px 20px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu li:hover {
+    background-color: #bb90a9; /* Sea Pink */
+    border-radius: 5px;
+}
+
+/* Collapsible Sidebar */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .sidebar-header h2 {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu li a span {
+    display: none;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: 0.3s ease-in-out;
+}
+
+header h1 {
+    color: #E52028; /* Alizarin Crimson */
+}
+
+/* Responsive Sidebar */
+.main-content.collapsed {
+    margin-left: 60px;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+    position: relative;
+}
+
+/* Ensure images fit properly */
+.slide img {
+    width: 100%;
+    height: 550px; /* Adjust to fit your design */
+    object-fit: cover; /* Ensures proper image scaling */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Images */
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+/* Product details styling */
+.product-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.product-details h3, .product-details p {
+    margin: 5px 0;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #E52028; /* Alizarin Crimson */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .slide img {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .product-details {
+        bottom: 10px;
+        left: 10px;
+        padding: 10px;
+    }
+
+    .product-details h3 {
+        font-size: 16px;
+    }
+
+    .product-details p {
+        font-size: 14px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+/* Main Content */
+main {
+    margin-left: 270px; /* Adjust for increased sidebar width */
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for cost report cards */
+.container {
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Flexbox Container for Cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card for Cost Report */
+.card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: auto; /* Allow card to adjust height based on content */
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Image inside card */
+.card-img {
+    width: 100%;
+    height: 150px; /* Slightly larger for better clarity */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Card Image */
+.card:hover .card-img {
+    transform: scale(1.05);
+}
+
+/* Heading */
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Ensure the h2 stays inside the card */
+}
+
+/* Specific Background Colors */
+.card.product {
+    background-color: rgb(137, 137, 137);
+}
+
+.card.inventory {
+    background-color: rgb(137, 137, 137);
+}
+
+.card.trans {
+    background-color: rgb(137, 137, 137);
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 90%; /* Cards adjust size for smaller screens */
+        height: auto; /* Adjust height dynamically for smaller screens */
+    }
+}
